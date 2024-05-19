@@ -1,0 +1,115 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark Background */
+    color: #e0e0e0; /* Light Gray Text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e3a5f; /* Deep Blue */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+        nav ul li a {
+            color: #e0e0e0; /* Light Gray */
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #ffcc00; /* Bright Accent */
+            }
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px; /* Spacious Layout */
+}
+
+.birthday-message,
+.custom-message {
+    text-align: center;
+    background-color: #283d63; /* Darker Blue */
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+    .birthday-message h1 {
+        font-size: 3em; /* Emphasis */
+        margin-bottom: 20px;
+        color: #ffcc00; /* Bright Accent */
+    }
+
+    .birthday-message p,
+    .custom-message p {
+        font-size: 1.4em;
+        color: #e0e0e0; /* Light Gray */
+    }
+
+footer {
+    text-align: center;
+    padding: 5px 0; /* Reduced padding for smaller size */
+    background-color: #1e3a5f; /* Deep Blue */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #e0e0e0; /* Light Gray */
+    font-size: 0.8em;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    margin: 15px;
+    position: relative;
+    width: 600px; /* Larger Images */
+}
+
+    .image img {
+        max-width: 100%;
+        max-height: 400px; /* Larger Images */
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Modern Shadow */
+    }
+
+.image-caption {
+    position: absolute;
+    bottom: 20px; /* Visible Caption */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(30, 58, 95, 0.8); /* Semi-transparent Deep Blue */
+    color: #ffcc00; /* Bright Accent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+    .image-caption:hover {
+        background-color: rgba(30, 58, 95, 1); /* Hover Effect */
+    }

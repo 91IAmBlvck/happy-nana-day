@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HappyBirthdayNana</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Us", "Us", "Home")</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        @RenderBody()
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - HappyBirthdayNana</p>
+    </footer>
+</body>
+</html>
